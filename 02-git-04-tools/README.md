@@ -5,14 +5,19 @@
     Update CHANGELOG.md
     
 2   git log --oneline 85024d3
+
     85024d310 (tag: v0.12.23)
     
 3   git show b8d720^
+
     commit 56cd7859e05c36c06b56d013b55a252d0bb7e158
+    
     git show b8d720^2
+    
     commit 9ea88f22fc6269854151c571162c5bcf958bee2b
     
 4   git log v0.12.23..v0.12.24 --oneline
+
     33ff1c03b (tag: v0.12.24) v0.12.24
     b14b74c49 [Website] vmc provider links
     3f235065b Update CHANGELOG.md
