@@ -11,7 +11,8 @@
 config.vm.provider "virtualbox" do |vb|
 vb.memory = "512"
 vb.cpu = "1"
-end''''
+end
+'''
 
 1. Ознакомиться с разделами man bash, почитать о настройках самого bash:
 какой переменной можно задать длину журнала history, и на какой строчке manual это описывается?
