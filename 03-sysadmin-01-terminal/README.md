@@ -5,5 +5,12 @@
 ![1](https://user-images.githubusercontent.com/95243483/147857214-4ea08c98-f32d-4af5-adbc-cedb59512bea.jpg)
 
 1. Ознакомьтесь с возможностями конфигурации VirtualBox через Vagrantfile: документация. Как добавить оперативной памяти или ресурсов процессора виртуальной машине?
-![2](https://user-images.githubusercontent.com/95243483/147857262-c56a1a87-8642-480f-a370-9829b1e6cf98.jpg)
-![3](https://user-images.githubusercontent.com/95243483/147857263-3eee0a20-e3e1-4690-8c2c-e27f46150dfc.jpg)
+добавлением комманд в VagrantFile:
+config.vm.provider "virtualbox" do |vb|
+vb.memory = "512"
+vb.cpu = "1"
+end
+1. Ознакомиться с разделами man bash, почитать о настройках самого bash:
+какой переменной можно задать длину журнала history, и на какой строчке manual это описывается?
+что делает директива ignoreboth в bash?
+HISTSIZE 862
