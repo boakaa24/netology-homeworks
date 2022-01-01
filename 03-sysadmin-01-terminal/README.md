@@ -7,12 +7,12 @@
 1. Ознакомьтесь с возможностями конфигурации VirtualBox через Vagrantfile: документация. Как добавить оперативной памяти или ресурсов процессора виртуальной машине?
 добавлением комманд в VagrantFile:
 
-'''Bash
-config.vm.provider "virtualbox" do |vb|
-vb.memory = "512"
-vb.cpu = "1"
-end
-'''
+  '''Bash
+  config.vm.provider "virtualbox" do |vb|
+  vb.memory = "512"
+  vb.cpu = "1"
+  end
+  '''
 
 1. Ознакомиться с разделами man bash, почитать о настройках самого bash:
 какой переменной можно задать длину журнала history, и на какой строчке manual это описывается?
