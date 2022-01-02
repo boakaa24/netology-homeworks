@@ -33,4 +33,4 @@
  touch {000001..100000}.txt
  
   touch {000001..300000}.txt
-  -bash: /usr/bin/touch: Argument list too long
+  -bash: /usr/bin/touch: Argument list too long Ограничение на уровне ядра.
