@@ -17,9 +17,9 @@
 какой переменной можно задать длину журнала history, и на какой строчке manual это описывается?
 что делает директива ignoreboth в bash?
 
-HISTSIZE 862  
-HISTFILESIZE 1155
+  HISTSIZE 862  
+  HISTFILESIZE 1155
 
-ignoreboth это сокращение для  
+  ignoreboth это сокращение для  
     ignorespace - не сохранять команды начинающиеся с пробела  
     ignoredups - не сохранять команду, если такая уже имеется в истории  
