@@ -34,3 +34,22 @@
  
   touch {000001..300000}.txt
   -bash: /usr/bin/touch: Argument list too long Ограничение на уровне ядра.
+  
+  6. В man bash поищите по /\[\[. Что делает конструкция [[ -d /tmp ]]
+
+  Проверяет, существует ли каталог /tmp. Если да, возвращает 0.
+  
+  7. Основываясь на знаниях о просмотре текущих (например, PATH) и установке новых переменных; командах, которые мы рассматривали, добейтесь в выводе type -a bash в виртуальной машине наличия первым пунктом в списке:
+  
+  ```
+vagrant@vagrant:~$ mkdir /tmp/new_dir/
+vagrant@vagrant:~$ cp /bin/bash /tmp/new_dir/
+vagrant@vagrant:~$ type -a bash
+bash is /usr/bin/bash
+bash is /bin/bash
+vagrant@vagrant:~$ PATH=/tmp/new_dir/:$PATH
+vagrant@vagrant:~$ type -a bash
+bash is /tmp/new_dir/bash
+bash is /usr/bin/bash
+bash is /bin/bash
+```
