@@ -3,10 +3,14 @@
 1. Это встроенная команда Bash.
 2. grep -c 'word' /path/to/file
 3.  pstree -p
-init(1)─┬─init(7)───init(8)───bash(9)─┬─pstree(92)
-        │                             └─wc(72)
-        └─{init}(6)
+  systemd(1)─┬─VBoxService(832)─┬─{VBoxService}(833)
+           │                  ├─{VBoxService}(834)
+           │                  ├─{VBoxService}(835)
+           │                  ├─{VBoxService}(836)
+           │                  ├─{VBoxService}(837)
+           │                  ├─{VBoxService}(838)
+           │                  ├─{VBoxService}(839)
+           │                  └─{VBoxService}(840)
         
-init(1)
 4. 
 
