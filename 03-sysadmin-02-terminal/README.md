@@ -25,4 +25,18 @@ vagrant@vagrant:~$ ls -l \1 2>/dev/pts/1
 ```
 vagrant@vagrant:~$ ls: cannot access '1': No such file or directory
 ```
+5.
+```
+vagrant@vagrant:~$ cat >1
+12345
+67890
+vagrant@vagrant:~$ cat 1
+12345
+67890
+vagrant@vagrant:~$ cat <1 >2
+vagrant@vagrant:~$ cat 2
+12345
+67890
+```
+6. 
 
