@@ -20,11 +20,9 @@
 vagrant@vagrant:~$ who
 vagrant  pts/0        2022-01-18 17:08 (10.0.2.2)
 vagrant  pts/1        2022-01-18 17:21 (10.0.2.2)
-vagrant@vagrant:~$ ls -l  >/dev/pts/1
+vagrant@vagrant:~$ ls -l \1 2>/dev/pts/1
 ```
 ```
-vagrant@vagrant:~$ total 416
--rw-r--r-- 1 vagrant vagrant 406139 Jan  1 18:35 'h, почитать о настройках самого bash:'
--rw-r--r-- 1 vagrant vagrant  12484 Jan  1 18:35 'tory, и на какой строчке manual это описывается?'
+vagrant@vagrant:~$ ls: cannot access '1': No such file or directory
 ```
 
