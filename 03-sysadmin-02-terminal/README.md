@@ -38,5 +38,6 @@ vagrant@vagrant:~$ cat 2
 12345
 67890
 ```
-6. 
+6. vagrant@vagrant:~$ sudo echo Hello >/dev/tty1  
+    наблюдать в графическом режиме не получится.
 
