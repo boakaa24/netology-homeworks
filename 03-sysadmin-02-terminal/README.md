@@ -4,6 +4,7 @@
 2. grep -c 'word' /path/to/file
 3.  pstree -p
 
+```
   systemd(1)─┬─VBoxService(832)─┬─{VBoxService}(833)
            │                  ├─{VBoxService}(834)
            │                  ├─{VBoxService}(835)
@@ -12,6 +13,7 @@
            │                  ├─{VBoxService}(838)
            │                  ├─{VBoxService}(839)
            │                  └─{VBoxService}(840)
+ ```
         
 4. ls -l \root 2>/dev/pts/1
 
