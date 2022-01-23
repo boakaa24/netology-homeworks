@@ -15,3 +15,5 @@
 627    dbus-daemon        -1   2 /lib/dbus-1/system-services
 627    dbus-daemon        20   0 /var/lib/snapd/dbus-1/system-services/
 ```
+6. системный вызов uname()  
+Part of the utsname information is also accessible  via  /proc/sys/kernel/{ostype, hostname, osrelease, version, domainname}.
