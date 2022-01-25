@@ -12,3 +12,25 @@
      CGroup: /system.slice/node_exporter.service
              └─1167 /usr/local/bin/node_exporter
 ```
+2.
+```
+node_cpu_seconds_total{cpu="0",mode="idle"} 88.98
+node_cpu_seconds_total{cpu="0",mode="system"} 10.84
+node_cpu_seconds_total{cpu="0",mode="user"} 2.98
+
+node_memory_MemAvailable_bytes 3.4183168e+08
+node_memory_MemFree_bytes 2.4576e+07
+
+node_disk_io_time_seconds_total{device="sda"} 12.82
+node_disk_read_time_seconds_total{device="sda"} 9.677
+node_disk_write_time_seconds_total{device="sda"} 2.021
+
+node_network_receive_errs_total{device="eth0"} 0
+node_network_receive_drop_total{device="eth0"} 0
+node_network_receive_bytes_total{device="eth0"} 17237
+node_network_transmit_bytes_total{device="eth0"} 10684
+node_network_transmit_drop_total{device="eth0"} 0
+node_network_transmit_errs_total{device="eth0"} 0
+```
+3.
+
