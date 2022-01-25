@@ -34,4 +34,16 @@ node_network_transmit_errs_total{device="eth0"} 0
 ```
 3.
 ![image](https://user-images.githubusercontent.com/95243483/151032701-697e2afe-dfb0-402a-9b11-891b36c1464d.png)
-
+4. Да
+```
+vagrant@vagrant:~$ dmesg |grep virtual
+[    0.004322] CPU MTRRs all blank - virtualized system.
+[    0.049203] Booting paravirtualized kernel on KVM
+[    0.724313] Performance Events: PMU not available due to virtualization, using software events only.
+[   10.521276] systemd[1]: Detected virtualization oracle.
+```
+5.
+```
+vagrant@vagrant:~$ /sbin/sysctl -n fs.nr_open
+1048576
+```
