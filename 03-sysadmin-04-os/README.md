@@ -46,4 +46,7 @@ vagrant@vagrant:~$ dmesg |grep virtual
 ```
 vagrant@vagrant:~$ /sbin/sysctl -n fs.nr_open
 1048576
+vagrant@vagrant:~$ cat /proc/sys/fs/nr_open
+1048576
 ```
+Это максимальное количество файлов, которое может быть открыто в одном процессе
