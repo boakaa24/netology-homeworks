@@ -33,4 +33,5 @@ node_network_transmit_drop_total{device="eth0"} 0
 node_network_transmit_errs_total{device="eth0"} 0
 ```
 3.
+![image](https://user-images.githubusercontent.com/95243483/151032701-697e2afe-dfb0-402a-9b11-891b36c1464d.png)
 
