@@ -77,4 +77,10 @@ root@vagrant:/# ps
       2 pts/0    00:00:00 bash
      13 pts/0    00:00:00 ps
 ```
-7.
+7. Эта команда плодит процессы.  
+Вот что стабилизировало
+```
+[ 3099.973235] cgroup: fork rejected by pids controller in /user.slice/user-1000.slice/session-4.scope
+[ 3103.171819] cgroup: fork rejected by pids controller in /user.slice/user-1000.slice/session-11.scope
+```
+ulimit -u число процессов
