@@ -61,3 +61,20 @@ vagrant@vagrant:~$ ulimit -Hn
 ```
 Жесткий лимит числа открытых файлов для пользователя(не может быть увеличен)  
 6. 
+```
+root@vagrant:~# unshare -f --pid --mount-proc sleep 1h
+^C
+root@vagrant:~# ps
+    PID TTY          TIME CMD
+   3576 pts/0    00:00:00 sudo
+   3578 pts/0    00:00:00 bash
+   3622 pts/0    00:00:00 sleep
+   3623 pts/0    00:00:00 ps
+root@vagrant:~# nsenter --target 3622 --pid --mount
+root@vagrant:/# ps
+    PID TTY          TIME CMD
+      1 pts/0    00:00:00 sleep
+      2 pts/0    00:00:00 bash
+     13 pts/0    00:00:00 ps
+```
+7.
