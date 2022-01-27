@@ -1,5 +1,5 @@
 1.
-![image](https://user-images.githubusercontent.com/95243483/151369774-8c9f88a1-96bb-4cbe-b835-f61f8c700286.png)
+![image](https://user-images.githubusercontent.com/95243483/151372410-89c8099f-8c7d-4ab4-af39-38e33647d8aa.png)
 
 ![image](https://user-images.githubusercontent.com/95243483/151024382-3f75011c-f43f-4a74-ba47-2af3590b9c4d.png)
 
