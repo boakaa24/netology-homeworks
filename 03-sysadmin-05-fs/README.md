@@ -67,3 +67,6 @@ drwx------ 2 root root    16384 Jan 28 16:20 lost+found
 ![image](https://user-images.githubusercontent.com/95243483/151583882-aa76cb6e-0d11-4b1d-b99b-4d93b84b1cbd.png)
 
 15.
+![image](https://user-images.githubusercontent.com/95243483/151584095-547cc436-95fe-4583-8672-17c1e5036703.png)
+
+16.
