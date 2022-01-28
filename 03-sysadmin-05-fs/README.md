@@ -12,3 +12,9 @@
 ![image](https://user-images.githubusercontent.com/95243483/151580151-c56e7380-0110-409b-9727-bd9abae90c1f.png)
 
 6.
+![image](https://user-images.githubusercontent.com/95243483/151581277-2d7834b8-8d9c-4da0-8131-3b3a96e5582a.png)
+
+7.
+![image](https://user-images.githubusercontent.com/95243483/151581731-a7e81428-174f-4b3b-bcff-411e25b803bb.png)
+
+8.
