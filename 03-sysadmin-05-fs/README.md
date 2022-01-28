@@ -78,3 +78,20 @@ root@vagrant:~# mdadm /dev/md1 --fail /dev/sdc1
 mdadm: set /dev/sdc1 faulty in /dev/md1
 ```
 18.
+```
+[ 4406.935256] md/raid1:md1: Disk failure on sdc1, disabling device.
+               md/raid1:md1: Operation continuing on 1 devices.
+```
+
+![image](https://user-images.githubusercontent.com/95243483/151585954-121a170f-44c2-42ce-9a17-b9badb132b28.png)
+
+19.
+```
+root@vagrant:~# gzip -t /tmp/new/test.gz
+root@vagrant:~# echo $?
+0
+```
+20.
+```
+vagrant destroy
+```
