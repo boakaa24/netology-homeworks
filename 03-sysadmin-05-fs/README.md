@@ -70,3 +70,11 @@ drwx------ 2 root root    16384 Jan 28 16:20 lost+found
 ![image](https://user-images.githubusercontent.com/95243483/151584095-547cc436-95fe-4583-8672-17c1e5036703.png)
 
 16.
+![image](https://user-images.githubusercontent.com/95243483/151584838-a496d473-ef4d-41df-bb3a-78dc17dc9bc7.png)
+
+17.
+```
+root@vagrant:~# mdadm /dev/md1 --fail /dev/sdc1
+mdadm: set /dev/sdc1 faulty in /dev/md1
+```
+18.
