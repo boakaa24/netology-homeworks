@@ -18,3 +18,25 @@
 ![image](https://user-images.githubusercontent.com/95243483/151581731-a7e81428-174f-4b3b-bcff-411e25b803bb.png)
 
 8.
+```
+root@vagrant:~# pvcreate /dev/md1 /dev/md2
+  Physical volume "/dev/md1" successfully created.
+  Physical volume "/dev/md2" successfully created.
+```
+9.
+```
+root@vagrant:~# vgcreate vg1 /dev/md1 /dev/md2
+  Volume group "vg1" successfully created
+```
+10.
+```
+root@vagrant:~# lvcreate -L 100M vg1 /dev/md2
+  WARNING: Device /dev/sda2 not initialized in udev database even after waiting 10000000 microseconds.
+  WARNING: Device /dev/sda2 not initialized in udev database even after waiting 10000000 microseconds.
+  Logical volume "lvol0" created.
+root@vagrant:~# lvs
+  WARNING: Device /dev/sda2 not initialized in udev database even after waiting 10000000 microseconds.
+  LV        VG        Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  ubuntu-lv ubuntu-vg -wi-ao----  31.50g                                                 
+  lvol0     vg1       -wi-a----- 100.00m
+  ```
