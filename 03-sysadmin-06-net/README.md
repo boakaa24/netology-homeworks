@@ -35,4 +35,18 @@
 10. Тем, что если фрагмент UDP не дойдет, то об этом никто не узнает, т. к. в отличии от TCP у UDP нет подтверждения пересылки.  
 И потетяется весь пакет. У TCP потеряется и перешлется только фрагмент.
 11. Если объем пересылаемых логов не такой большой, что бы забить сеть, я бы использовал TCP(гарантированная доставка) и syslog сервер.  
-12.  
+12.
+```
+andrew@ubuntu2110:~$ sudo ss -tp state listening
+[sudo] password for andrew:
+Recv-Q  Send-Q   Local Address:Port     Peer Address:Port Process
+0       4096     127.0.0.53%lo:domain        0.0.0.0:*     users:(("systemd-resolve",pid=660,fd=14))
+0       128            0.0.0.0:ssh           0.0.0.0:*     users:(("sshd",pid=723,fd=3))
+0       128               [::]:ssh              [::]:*     users:(("sshd",pid=723,fd=4))
+```
+2 ipv4 и 1 ipv6
+systemd  
+sshd  
+13. tcpdump -A - выведет содержание в ASCII (в тексте)  
+    tcpdump -x - выведет соедржимое пакетов в hex  
+14. 
