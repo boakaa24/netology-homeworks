@@ -54,7 +54,8 @@ Try 'traceroute --help' or 'traceroute --usage' for more information.
 
  15. AS15169  142.251.61.219
 
-7. 
+7.
+```
 google.com.             55671   IN      NS      ns3.google.com.
 google.com.             55671   IN      NS      ns1.google.com.
 google.com.             55671   IN      NS      ns2.google.com.
@@ -66,5 +67,5 @@ google.com.             227     IN      A       108.177.14.102
 google.com.             227     IN      A       108.177.14.138
 google.com.             227     IN      A       108.177.14.113
 google.com.             227     IN      A       108.177.14.139
-
+```
 8.
