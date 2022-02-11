@@ -38,3 +38,17 @@ https://stats.g.doubleclick.net/j/collect?t=dc&aip=1&_r=3&v=1&_v=j96&tid=UA-1082
 
 ![image](https://user-images.githubusercontent.com/95243483/153649918-b446653e-3ff5-433e-b132-98095988d8d5.png)
 
+3. 176.59.38.222  
+4. Tele2 Russia Groups  
+   AS12958  
+5.
+```
+ sudo traceroute -An 8.8.8.8
+[sudo] password for andrew:
+traceroute: invalid option -- 'A'
+Try 'traceroute --help' or 'traceroute --usage' for more information.
+```
+6.
+![image](https://user-images.githubusercontent.com/95243483/153654183-248cd52c-fabd-4000-b13f-80016e7b03ba.png)
+
+5. 
