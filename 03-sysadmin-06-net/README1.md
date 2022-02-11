@@ -49,6 +49,10 @@ traceroute: invalid option -- 'A'
 Try 'traceroute --help' or 'traceroute --usage' for more information.
 ```
 6.
-![image](https://user-images.githubusercontent.com/95243483/153654183-248cd52c-fabd-4000-b13f-80016e7b03ba.png)
+![image](https://user-images.githubusercontent.com/95243483/153654764-ff477695-5dab-46e2-9532-a586711f959e.png)
 
-5. 
+
+ 14. 74.125.244.132 
+
+7. 
+7.
