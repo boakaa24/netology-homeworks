@@ -23,3 +23,18 @@ Connection closed by foreign host.
 Код 301 означает, что контент перемещён и его новое расположение передано в параметре Location. Браузер, получив ответ 301 должен перейти на новое расположение.  
 Так же 301 означает не просто "перемещено", а "перемещено навсегда". Браузер при повторном запросе изначального адреса может даже не обращаться к серверу, а сразу требовать   документ из нового местоположения  
 2.
+```
+Request URL: http://stackoverflow.com/
+Request Method: GET
+Status Code: 307 Internal Redirect
+Referrer Policy: strict-origin-when-cross-origin
+Location: https://stackoverflow.com/
+Non-Authoritative-Reason: HSTS
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36
+```
+https://stats.g.doubleclick.net/j/collect?t=dc&aip=1&_r=3&v=1&_v=j96&tid=UA-108242619-1&cid=744015493.1638705365&jid=837816335&gjid=921661297&_gid=1598206914.1644484830&_u=SCCACEAAFAAAAC~&z=620643143
+
+![image](https://user-images.githubusercontent.com/95243483/153649918-b446653e-3ff5-433e-b132-98095988d8d5.png)
+
