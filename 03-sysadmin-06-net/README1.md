@@ -52,7 +52,19 @@ Try 'traceroute --help' or 'traceroute --usage' for more information.
 ![image](https://user-images.githubusercontent.com/95243483/153654764-ff477695-5dab-46e2-9532-a586711f959e.png)
 
 
- 14. 74.125.244.132 
+ 15. AS15169  142.251.61.219
 
 7. 
-7.
+google.com.             55671   IN      NS      ns3.google.com.
+google.com.             55671   IN      NS      ns1.google.com.
+google.com.             55671   IN      NS      ns2.google.com.
+google.com.             55671   IN      NS      ns4.google.com.
+
+google.com.             227     IN      A       108.177.14.101
+google.com.             227     IN      A       108.177.14.100
+google.com.             227     IN      A       108.177.14.102
+google.com.             227     IN      A       108.177.14.138
+google.com.             227     IN      A       108.177.14.113
+google.com.             227     IN      A       108.177.14.139
+
+8.
