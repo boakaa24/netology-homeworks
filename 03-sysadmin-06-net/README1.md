@@ -69,3 +69,16 @@ google.com.             227     IN      A       108.177.14.113
 google.com.             227     IN      A       108.177.14.139
 ```
 8.
+```
+andrew@ubuntu2110:~$ dig -x 108.177.14.100 +short
+lt-in-f100.1e100.net.
+andrew@ubuntu2110:~$ dig -x 108.177.14.101 +short
+lt-in-f101.1e100.net.
+andrew@ubuntu2110:~$ dig -x 108.177.14.102 +short
+lt-in-f102.1e100.net.
+andrew@ubuntu2110:~$ dig -x 108.177.14.113 +short
+lt-in-f113.1e100.net.
+andrew@ubuntu2110:~$ dig -x 108.177.14.138 +short
+lt-in-f138.1e100.net.
+andrew@ubuntu2110:~$ dig -x 108.177.14.139 +short
+```
