@@ -92,3 +92,8 @@ C:\Users\Andrey>arp -a
   ARP -d [inet_addr] 
   -d - удаляет узел, задаваемый inet_addr. Параметр inet_addr может содержать знак шаблона * для удаления всех узлов.
   ```
+В Linux есть такая же утилита  
+```
+andrew@ubuntu2110:~$ arp -a
+_gateway (10.0.2.2) at 52:54:00:12:35:02 [ether] on enp0s3
+```
