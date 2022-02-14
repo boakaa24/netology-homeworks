@@ -8,4 +8,16 @@
 sudo apt install lldpd
 lldpctl
 ```
-3.
+3. VLAN
+```
+apt-get install vlan
+```
+Настройки подынтерфейсов VLANов в Ubuntu указываются в файле /etc/network/interfaces
+```
+auto vlan1400
+iface vlan1400 inet static
+        address 192.168.1.1
+        netmask 255.255.255.0
+        vlan_raw_device eth0
+```
+4.
