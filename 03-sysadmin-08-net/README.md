@@ -175,8 +175,8 @@ Paths: (23 available, best #20, table default)
       path 7FE0BEE67160 RPKI State not found
       rx pathid: 0, tx pathid: 0
       ```
-  2.
+2.
+  
   ![image](https://user-images.githubusercontent.com/95243483/154533425-c7a343bd-01a7-4a68-b50d-670551e39f76.png)
-
 
 3.
