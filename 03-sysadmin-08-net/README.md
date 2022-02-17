@@ -174,7 +174,7 @@ Paths: (23 available, best #20, table default)
       Community: 2516:1050 7660:9003
       path 7FE0BEE67160 RPKI State not found
       rx pathid: 0, tx pathid: 0
-      ```
+```
 2.
   
  ![image](https://user-images.githubusercontent.com/95243483/154533714-a4c179f5-a949-4923-9a28-3966f7e4d5de.png)
