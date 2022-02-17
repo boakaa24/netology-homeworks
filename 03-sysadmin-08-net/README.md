@@ -192,3 +192,9 @@ Recv-Q            Send-Q                        Local Address:Port              
 vagrant@vagrant:~$ sudo ss -pu state listening
 Recv-Q                  Send-Q                                   Local Address:Port                                   Peer Address:Port                  Process
 ```
+5.
+![image](https://user-images.githubusercontent.com/95243483/154536840-8a756740-3c5d-4a3e-b028-40227f17c47c.png)
+
+6. Nginx использую на работе
+7. RIP настраивал при сдаче CCNA
+8. Использовал на работе.
