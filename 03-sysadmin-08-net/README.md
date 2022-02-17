@@ -177,6 +177,6 @@ Paths: (23 available, best #20, table default)
       ```
 2.
   
-  ![image](https://user-images.githubusercontent.com/95243483/154533425-c7a343bd-01a7-4a68-b50d-670551e39f76.png)
+ ![image](https://user-images.githubusercontent.com/95243483/154533714-a4c179f5-a949-4923-9a28-3966f7e4d5de.png)
 
 3.
