@@ -181,9 +181,14 @@ Paths: (23 available, best #20, table default)
 
 3.
 ```
-vagrant@vagrant:~$ sudo ss -ptu state listening
-Netid           Recv-Q           Send-Q                      Local Address:Port                         Peer Address:Port           Process
-tcp             0                4096                        127.0.0.53%lo:domain                            0.0.0.0:*               users:(("systemd-resolve",pid=16823,fd=13))
-tcp             0                128                               0.0.0.0:ssh                               0.0.0.0:*               users:(("sshd",pid=1016,fd=3))
-tcp             0                128                                  [::]:ssh                                  [::]:*               users:(("sshd",pid=1016,fd=4))
+vagrant@vagrant:~$ sudo ss -pt state listening
+Recv-Q            Send-Q                        Local Address:Port                           Peer Address:Port            Process
+0                 4096                          127.0.0.53%lo:domain                              0.0.0.0:*                users:(("systemd-resolve",pid=16823,fd=13))
+0                 128                                 0.0.0.0:ssh                                 0.0.0.0:*                users:(("sshd",pid=1016,fd=3))
+0                 128                                    [::]:ssh                                    [::]:*                users:(("sshd",pid=1016,fd=4))
+```
+4.
+```
+vagrant@vagrant:~$ sudo ss -pu state listening
+Recv-Q                  Send-Q                                   Local Address:Port                                   Peer Address:Port                  Process
 ```
