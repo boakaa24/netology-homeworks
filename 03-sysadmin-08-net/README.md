@@ -176,3 +176,6 @@ Paths: (23 available, best #20, table default)
       rx pathid: 0, tx pathid: 0
       ```
   2.
+  ![image](https://user-images.githubusercontent.com/95243483/154533312-6a816b9b-eb25-43b0-af3c-737759bb558b.png)
+
+3.
