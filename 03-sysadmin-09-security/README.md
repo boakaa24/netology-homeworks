@@ -10,3 +10,5 @@
 4.
 ![image](https://user-images.githubusercontent.com/95243483/154811347-78ee9ae3-849a-4e32-808b-7dd3b0d9cba0.png)
 5.
+![image](https://user-images.githubusercontent.com/95243483/154812897-0701288c-12eb-4d76-9064-b1cf6bf7450b.png)
+6.
