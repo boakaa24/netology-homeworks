@@ -6,4 +6,7 @@
 3.
 ![image](https://user-images.githubusercontent.com/95243483/154811017-30a01ef8-4d2e-48a9-bad2-611850b0e04a.png)
 ![image](https://user-images.githubusercontent.com/95243483/154811064-afb8538a-fa03-4d70-9346-15a276b14508.png)
+
 4.
+![image](https://user-images.githubusercontent.com/95243483/154811347-78ee9ae3-849a-4e32-808b-7dd3b0d9cba0.png)
+5.
