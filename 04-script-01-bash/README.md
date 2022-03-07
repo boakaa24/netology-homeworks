@@ -33,3 +33,21 @@ date >>hosts.log
     done
 done
 ```
+4.
+```
+hosts=(192.168.0.1 173.194.222.113 87.250.250.242)
+timeout=1
+res=0
+while (($res == 0))
+do
+    for h in ${hosts[@]}
+    do
+	curl -Is --connect-timeout $timeout $h:80 >/dev/null
+	res=$?
+	if (($res != 0))
+	then
+	    echo $h status=error connect >>error.log
+       exit
+	fi
+    done
+done
