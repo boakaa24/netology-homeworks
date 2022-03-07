@@ -13,8 +13,8 @@
         then
             date >> curl.log
         else exit
-        sleep 5
         fi
+        sleep 60
     done
  ```
  3.
