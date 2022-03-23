@@ -30,5 +30,24 @@ for result in result_os.split('\n'):
 2
 README.md
 ```
-
 3.
+```
+import os
+import sys
+
+path = sys.argv[1]
+
+bash_command = ["cd "+path, "git status"]
+
+result_os = os.popen(' && '.join(bash_command)).read()
+
+for result in result_os.split('\n'):
+    if result.find('modified') != -1:
+        prepare_result = result.replace('\tmodified:   ', '')
+        print(prepare_result)
+
+boakaa@DESKTOP-H6SSPL9:~/pythonProject$ python3 1.py ~/pythonProject/sysadm-homeworks
+2
+README.md
+```
+4.
