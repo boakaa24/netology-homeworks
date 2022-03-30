@@ -24,7 +24,42 @@
 
 ### Ваш скрипт:
 ```python
-???
+#!/usr/bin/env python3
+
+import os
+import socket
+import json
+import yaml
+
+# JSON файл для хранения хостов и их IP адресов, формат ключ/значение
+jconf_file="conf.json"
+
+# YAML файл для хранения хостов и их IP адресов, формат ключ/значение
+yconf_file="conf.yaml"
+
+with open(jconf_file) as json_data_file:
+    conf = json.load(json_data_file)
+
+# Перебор всех хостов из файла конфигурации и опредление их IP адресов
+for host, ip in conf.items():
+    new_ip=socket.gethostbyname(host)
+
+# Если IP адреса отличаются, выводится предупреждение и сохранение нового IP адреса в файле конфигурации
+    if (ip != new_ip):
+        print ('[ERROR] {} IP mismatch: {} {}'.format(host,ip,new_ip))
+        conf[host]=new_ip
+
+# Печать всех сопоставлений хоста и IP адреса
+# Сделано в отдельном цикле чтобы отделить ошибки от полезной информации
+for host, ip in conf.items():
+    print('{} - {}'.format(host,ip))
+
+# Пишем в файл, параметр ident дает нам человекочитаемый формат
+with open(jconf_file, "w") as json_data_file:
+    json.dump(conf, json_data_file, indent=2)
+
+with open(yconf_file, "w") as y_data:
+    y_data.write(yaml.dump(conf,explicit_start=True, explicit_end=True))
 ```
 
 ### Вывод скрипта при запуске при тестировании:
@@ -34,12 +69,20 @@
 
 ### json-файл(ы), который(е) записал ваш скрипт:
 ```json
-???
+{
+  "drive.google.com": "108.177.14.194",
+  "mail.google.com": "173.194.220.19",
+  "google.com": "64.233.162.100"
+}
 ```
 
 ### yml-файл(ы), который(е) записал ваш скрипт:
 ```yaml
-???
+---
+drive.google.com: 108.177.14.194
+google.com: 64.233.162.100
+mail.google.com: 173.194.220.19
+...
 ```
 
 ## Дополнительное задание (со звездочкой*) - необязательно к выполнению
