@@ -4,11 +4,11 @@
 ## Обязательная задача 1
 Мы выгрузили JSON, который получили через API запрос к нашему сервису:
 ```
-    { "info" : "Sample JSON output from our service\t",
+    { "info" : "Sample JSON output from our service",
         "elements" :[
             { "name" : "first",
             "type" : "server",
-            "ip" : "7175" 
+            "ip" : "7.1.7.5" 
             }
             { "name" : "second",
             "type" : "proxy",
