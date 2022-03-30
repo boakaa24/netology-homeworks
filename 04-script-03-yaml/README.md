@@ -64,7 +64,13 @@ with open(yconf_file, "w") as y_data:
 
 ### Вывод скрипта при запуске при тестировании:
 ```
-???
+boakaa@DESKTOP-H6SSPL9:~/pythonProject$ python3 2.py
+[ERROR] drive.google.com IP mismatch: 74.125.131.194 108.177.14.194
+[ERROR] mail.google.com IP mismatch: 216.58.210.165 173.194.220.19
+[ERROR] google.com IP mismatch: 216.58.209.174 64.233.162.100
+drive.google.com - 108.177.14.194
+mail.google.com - 173.194.220.19
+google.com - 64.233.162.100
 ```
 
 ### json-файл(ы), который(е) записал ваш скрипт:
