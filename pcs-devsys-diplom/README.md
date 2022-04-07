@@ -12,3 +12,7 @@
 
 срок правда поставил 20 дней  
 5.
+![image](https://user-images.githubusercontent.com/95243483/162265066-a704541c-6886-400b-a8ba-8d4b788bf56d.png)
+![image](https://user-images.githubusercontent.com/95243483/162265169-c675d750-2d58-4a83-99c9-ce3b9679d2d5.png)
+
+6.
