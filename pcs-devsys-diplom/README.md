@@ -16,3 +16,6 @@
 ![image](https://user-images.githubusercontent.com/95243483/162265169-c675d750-2d58-4a83-99c9-ce3b9679d2d5.png)
 
 6.
+![image](https://user-images.githubusercontent.com/95243483/162494717-107c9a29-315b-4515-821a-d435d86b48a5.png)
+
+7.
