@@ -41,5 +41,5 @@ systemctl restart nginx
 ![image](https://user-images.githubusercontent.com/95243483/162587413-f148345f-afa5-408b-b5a4-da8704423ea8.png)
 
 10.
-![image](https://user-images.githubusercontent.com/95243483/162590301-5308440b-b3ff-4e09-be91-91295dd2c608.png)
+![image](https://user-images.githubusercontent.com/95243483/162590534-393477f8-c49d-403b-8fab-82525c3a0182.png)
 ![image](https://user-images.githubusercontent.com/95243483/162590453-9dce14c0-a3f7-453c-8de4-609c61ae6fc5.png)
