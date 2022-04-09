@@ -30,7 +30,7 @@
 # Create cert
 vault write -format=json pki/issue/example-dot-com \
     common_name="dev.example.com" \
-    ttl="456h" > dev.example.com.crt
+    ttl="480h" > dev.example.com.crt
 
 # save cert
 cat dev.example.com.crt | jq -r .data.certificate > dev.crt
