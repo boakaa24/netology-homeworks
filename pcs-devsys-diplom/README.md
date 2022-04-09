@@ -35,7 +35,11 @@ vault write -format=json pki/issue/example-dot-com \
 # save cert
 cat dev.example.com.crt | jq -r .data.certificate > dev.crt
 cat dev.example.com.crt | jq -r .data.private_key > dev.key
+
+systemctl restart nginx
 ```
 ![image](https://user-images.githubusercontent.com/95243483/162587413-f148345f-afa5-408b-b5a4-da8704423ea8.png)
+
 10.
-![image](https://user-images.githubusercontent.com/95243483/162587859-ec4b6258-cae5-43f9-8bc8-370c3b0ccb0a.png)
+![image](https://user-images.githubusercontent.com/95243483/162590301-5308440b-b3ff-4e09-be91-91295dd2c608.png)
+![image](https://user-images.githubusercontent.com/95243483/162590453-9dce14c0-a3f7-453c-8de4-609c61ae6fc5.png)
