@@ -36,4 +36,5 @@ vault write -format=json pki/issue/example-dot-com \
 cat dev.example.com.crt | jq -r .data.certificate > dev.crt
 cat dev.example.com.crt | jq -r .data.private_key > dev.key
 ```
+![image](https://user-images.githubusercontent.com/95243483/162587413-f148345f-afa5-408b-b5a4-da8704423ea8.png)
 10.
