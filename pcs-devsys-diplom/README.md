@@ -21,6 +21,19 @@
 7.
 ![image](https://user-images.githubusercontent.com/95243483/162585966-51a4b73f-a365-420e-9a51-6d17346ee138.png)
 8.
-
 ![image](https://user-images.githubusercontent.com/95243483/162585783-ffb67b54-2fbb-4b8e-ab40-1733dfea530b.png)
 ![image](https://user-images.githubusercontent.com/95243483/162585804-a5c380bc-6eff-451c-9e53-a5b3782c66e7.png)
+9.
+```
+#!/bin/bash
+
+# Create cert
+vault write -format=json pki/issue/example-dot-com \
+    common_name="dev.example.com" \
+    ttl="456h" > dev.example.com.crt
+
+# save cert
+cat dev.example.com.crt | jq -r .data.certificate > dev.crt
+cat dev.example.com.crt | jq -r .data.private_key > dev.key
+```
+10.
