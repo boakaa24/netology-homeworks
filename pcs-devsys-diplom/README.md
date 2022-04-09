@@ -38,3 +38,4 @@ cat dev.example.com.crt | jq -r .data.private_key > dev.key
 ```
 ![image](https://user-images.githubusercontent.com/95243483/162587413-f148345f-afa5-408b-b5a4-da8704423ea8.png)
 10.
+![image](https://user-images.githubusercontent.com/95243483/162587859-ec4b6258-cae5-43f9-8bc8-370c3b0ccb0a.png)
