@@ -21,5 +21,11 @@ andrew@andrew-HP-Compaq-8200-Elite-SFF-PC:~$ vagrant --version
 Vagrant 2.2.19
 ```
 ```
-
+andrew@andrew-HP-Compaq-8200-Elite-SFF-PC:~$ ansible --version
+ansible 2.10.8
+  config file = None
+  configured module search path = ['/home/andrew/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
 ```
