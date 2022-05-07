@@ -16,3 +16,10 @@
 andrew@andrew-HP-Compaq-8200-Elite-SFF-PC:~$ vboxmanage --version
 6.1.32_Ubuntur149290
 ```
+```
+andrew@andrew-HP-Compaq-8200-Elite-SFF-PC:~$ vagrant --version
+Vagrant 2.2.19
+```
+```
+
+```
