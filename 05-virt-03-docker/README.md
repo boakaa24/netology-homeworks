@@ -14,3 +14,20 @@ https://hub.docker.com/repository/docker/boakaa24/nginx-devops/general
 - MongoDB, как основное хранилище данных для java-приложения - либо виртуализация, либо контейнеризация, все зависит от реализации архитектуры приложения. Сложно дать вразумительный ответ - никогда не работал с данной БД, затрудняюсь обосновать выбор.
 - Gitlab сервер для реализации CI/CD процессов и приватный (закрытый) Docker Registry - отдельный физический сервер или виртуализация, если сервер есть в наличии использовал бы его, но только необходимо оценить доступные объемы хранения данных, в том числе подумать о техническом сопровождении: просчитать затраты на поддержку железа и ЗИП. Если по совокупности поставленных задач будет понятно, что через осязаемое недалекое время мы выйдем за пределы мощностей физ. сервера, то выбрал бы, на перспективу, виртуализацию, однако возможны первичные затраты на доп. железо, но все зависит от проекта. Требуется пред проектная аналитика.
 3.
+```
+root@andrew-HP-Compaq-8200-Elite-SFF-PC:~# docker ps
+CONTAINER ID   IMAGE     COMMAND       CREATED          STATUS         PORTS     NAMES
+b43c0134931e   debian    "bash"        19 seconds ago   Up 8 seconds             lucid_meitner
+c6d6915ffc5d   centos    "/bin/bash"   4 minutes ago    Up 4 minutes             gracious_dewdney
+[root@c6d6915ffc5d /]# echo '' > /data/file1
+[root@c6d6915ffc5d /]# ls /data
+file1
+[root@c6d6915ffc5d /]# exit
+exit
+root@andrew-HP-Compaq-8200-Elite-SFF-PC:~# echo '' > /data/file2
+root@andrew-HP-Compaq-8200-Elite-SFF-PC:~# ls /data
+file1  file2
+root@andrew-HP-Compaq-8200-Elite-SFF-PC:~# docker exec -it b43c0134931e bash
+root@b43c0134931e:/# ls /data
+file1  file2
+```
