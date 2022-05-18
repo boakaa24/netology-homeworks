@@ -3,6 +3,6 @@
 ![image](https://user-images.githubusercontent.com/95243483/168873253-014e8c0b-cb60-45cc-a996-b20246fa5ea1.png)
 
 2.
-![image](https://user-images.githubusercontent.com/95243483/168885342-4d9679eb-0a1b-4457-9ae2-7ddfccba59ec.png)
+![image](https://user-images.githubusercontent.com/95243483/169025364-852cfe6e-edb7-470a-b799-c7c0d19f214f.png)
 
 3.
