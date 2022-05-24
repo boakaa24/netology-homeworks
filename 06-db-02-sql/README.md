@@ -133,3 +133,17 @@ SELECT COUNT(*) FROM clients
 "count"
 5
 ```
+4.
+```
+UPDATE clients SET order_number=3 WHERE id=1;
+UPDATE clients SET order_number=4 WHERE id=2;
+UPDATE clients SET order_number=5 WHERE id=3
+```
+```
+SELECT * FROM clients WHERE order_number IS NOT NULL
+
+"id"	"last_name"		"country"	"order_number"
+1	"Иванов Иван Иванович"	"USA"		3
+2	"Петров Петр Петрович"	"Canada"	4
+3	"Иоганн Себастьян Бах"	"Japan"		5
+```
