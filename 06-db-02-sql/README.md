@@ -160,7 +160,8 @@ SELECT * FROM clients WHERE order_number IS NOT NULL
     Plan Rows: 348
     Plan Width: 204
     Filter: ""(order_number IS NOT NULL)"""
+    
     EXPLAIN - позволяет нам дать служебную информацию о запросе к БД, в том числе время на выполнение запроса,
     что при оптимизации работы БД является очень полезной информацией.  
-    ```
+    
 6.
