@@ -121,3 +121,15 @@ SELECT table_name, grantee, privilege_type
 "clients"	"test-simple-user"	"UPDATE"
 "clients"	"test-simple-user"	"DELETE"
 ```
+3.
+```
+SELECT COUNT(*) FROM orders
+
+"count"
+5
+
+SELECT COUNT(*) FROM clients
+
+"count"
+5
+```
