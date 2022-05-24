@@ -86,3 +86,38 @@ Foreign-key constraints:
     "clients_order_number_fkey" FOREIGN KEY (order_number) REFERENCES orders(id)
 Access method: heap
 ```
+```
+SELECT table_name, grantee, privilege_type 
+	FROM information_schema.role_table_grants 
+	WHERE table_name='orders'
+  
+SELECT table_name, grantee, privilege_type 
+	FROM information_schema.role_table_grants 
+	WHERE table_name='clients'
+  ```
+  ```
+"orders"	"postgres"	        "INSERT"
+"orders"	"postgres"	        "SELECT"
+"orders"	"postgres"	        "UPDATE"
+"orders"	"postgres"	        "DELETE"
+"orders"	"postgres"	        "TRUNCATE"
+"orders"	"postgres"	        "REFERENCES"
+"orders"	"postgres"	        "TRIGGER"
+"orders"	"test-simple-user"	"INSERT"
+"orders"	"test-simple-user"	"SELECT"
+"orders"	"test-simple-user"	"UPDATE"
+"orders"	"test-simple-user"	"DELETE"
+```
+```
+"clients"	"postgres"	        "INSERT"
+"clients"	"postgres"	        "SELECT"
+"clients"	"postgres"	        "UPDATE"
+"clients"	"postgres"	        "DELETE"
+"clients"	"postgres"	        "TRUNCATE"
+"clients"	"postgres"	        "REFERENCES"
+"clients"	"postgres"	        "TRIGGER"
+"clients"	"test-simple-user"	"INSERT"
+"clients"	"test-simple-user"	"SELECT"
+"clients"	"test-simple-user"	"UPDATE"
+"clients"	"test-simple-user"	"DELETE"
+```
