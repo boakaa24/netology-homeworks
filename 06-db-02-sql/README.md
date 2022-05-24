@@ -149,7 +149,7 @@ SELECT * FROM clients WHERE order_number IS NOT NULL
 ```
 5.
 ```
-"- Plan: 
+- Plan: 
     Node Type: ""Seq Scan""
     Parallel Aware: false
     Async Capable: false
@@ -159,9 +159,9 @@ SELECT * FROM clients WHERE order_number IS NOT NULL
     Total Cost: 13.50
     Plan Rows: 348
     Plan Width: 204
-    Filter: ""(order_number IS NOT NULL)"""
+    Filter: ""(order_number IS NOT NULL)
     
     EXPLAIN - позволяет нам дать служебную информацию о запросе к БД, в том числе время на выполнение запроса,
     что при оптимизации работы БД является очень полезной информацией.  
-    
+  ```
 6.
