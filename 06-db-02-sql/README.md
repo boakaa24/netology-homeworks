@@ -165,3 +165,37 @@ SELECT * FROM clients WHERE order_number IS NOT NULL
     что при оптимизации работы БД является очень полезной информацией.  
   ```
 6.
+```
+root@ubuntu-home:~/docker-compose-PostgreSQL# docker exec -it postgressql bash
+root@ubuntu-home:/# pg_dumpall > /backup/backup_"`date +"%d-%m-%Y"`"
+root@ubuntu-home:/# ls backup
+backup_24-05-2022
+root@ubuntu-home:~/docker-compose-PostgreSQL# docker-compose down
+Stopping postgressql ... done
+Removing postgressql ... done
+root@ubuntu-home:~/docker-compose-PostgreSQL# docker volume ls
+DRIVER    VOLUME NAME
+local     docker-compose-postgresql_backup_postgressql_data
+local     docker-compose-postgresql_postgressql_data
+root@ubuntu-home:~/docker-compose-PostgreSQL# docker volume rm docker-compose-postgresql_postgressql_data
+docker-compose-postgresql_postgressql_data
+root@ubuntu-home:~/docker-compose-PostgreSQL# docker volume ls
+DRIVER    VOLUME NAME
+local     docker-compose-postgresql_backup_postgressql_data
+root@ubuntu-home:~/docker-compose-PostgreSQL# docker-compose up -d
+Starting postgressql ... done
+root@ubuntu-home:~/docker-compose-PostgreSQL# docker exec -it postgressql bash
+root@ubuntu-home:/# psql -f /backup/backup_24-05-2022
+
+test_db=# \l
+                                 List of databases
+   Name    |  Owner   | Encoding |  Collate   |   Ctype    |   Access privileges
+-----------+----------+----------+------------+------------+-----------------------
+ postgres  | postgres | UTF8     | en_US.utf8 | en_US.utf8 |
+ template0 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+ template1 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+ test_db   | postgres | UTF8     | en_US.utf8 | en_US.utf8 |
+(4 rows)
+```
