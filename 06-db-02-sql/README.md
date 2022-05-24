@@ -147,3 +147,17 @@ SELECT * FROM clients WHERE order_number IS NOT NULL
 2	"Петров Петр Петрович"	"Canada"	4
 3	"Иоганн Себастьян Бах"	"Japan"		5
 ```
+5.
+```
+"- Plan: 
+    Node Type: ""Seq Scan""
+    Parallel Aware: false
+    Async Capable: false
+    Relation Name: ""clients""
+    Alias: ""clients""
+    Startup Cost: 0.00
+    Total Cost: 13.50
+    Plan Rows: 348
+    Plan Width: 204
+    Filter: ""(order_number IS NOT NULL)"""
+    ```
