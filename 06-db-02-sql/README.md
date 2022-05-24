@@ -62,6 +62,7 @@ Referenced by:
     TABLE "clients" CONSTRAINT "clients_order_number_fkey" FOREIGN KEY (order_number) REFERENCES orders(id)
 Access method: heap
 ```
+```
 test_db=# \d+ clients
                                                                  Table "public.clients"
     Column    |         Type          | Collation | Nullable |               Default               | Storage  | Com
