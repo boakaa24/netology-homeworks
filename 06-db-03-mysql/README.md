@@ -46,3 +46,17 @@ mysql> select count(*) from orders where price>300;
 1 row in set (0.00 sec)
 ```
 2.
+```
+mysql> grant select on test1. to test@'localhost';
+mysql> flush privileges;
+```
+```
+mysql> select * from INFORMATION_SCHEMA.USER_ATTRIBUTEs where user = 'test';
++------+-----------+---------------------------------------+
+| USER | HOST      | ATTRIBUTE                             |
++------+-----------+---------------------------------------+
+| test | localhost | {"fname": "James", "lname": "Pretty"} |
++------+-----------+---------------------------------------+
+1 row in set (0.00 sec)
+```
+3.
