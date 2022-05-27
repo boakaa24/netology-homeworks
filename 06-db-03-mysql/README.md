@@ -47,6 +47,15 @@ mysql> select count(*) from orders where price>300;
 ```
 2.
 ```
+mysql> create user 'test'@'localhost'
+    ->     identified with mysql_native_password by 'test-pass'
+    ->     with max_queries_per_hour 100
+    ->     password expire interval 180 day
+    ->     failed_login_attempts 3
+    ->     attribute '{"fname": "James","lname": "Pretty"}';
+Query OK, 0 rows affected (0.18 sec)
+```
+```
 mysql> grant select on test1. to test@'localhost';
 mysql> flush privileges;
 ```
