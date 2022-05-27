@@ -25,3 +25,24 @@ Uptime:                 26 min 4 sec
 Threads: 2  Questions: 11  Slow queries: 0  Opens: 139  Flush tables: 3  Open tables: 58  Queries per second avg: 0.007
 --------------
 ```
+```
+mysql> USE `test1`;
+Database changed
+mysql> show tables;
++-----------------+
+| Tables_in_test1 |
++-----------------+
+| orders          |
++-----------------+
+1 row in set (0.00 sec)
+```
+```
+mysql> select count(*) from orders where price>300;
++----------+
+| count(*) |
++----------+
+|        1 |
++----------+
+1 row in set (0.00 sec)
+```
+2.
