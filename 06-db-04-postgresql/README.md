@@ -23,3 +23,23 @@ test_database=# select avg_width from pg_stats where tablename='orders';
 (3 rows)
 ```
 3.
+Да, можно было избежать разбиения таблицы вручную, необходимо было определить тип на моменте проектирования и создания - partitioned table
+```
+test_database=# 
+begin;
+    create table orders_new (
+        id integer NOT NULL,
+        title varchar(80) NOT NULL,
+        price integer) partition by range(price);
+    create table orders_less partition of orders_new for values from (0) to (499);
+    create table orders_more partition of orders_new for values from (499) to (99999);
+    insert into orders_new (id, title, price) select * from orders;
+commit;
+BEGIN
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 8
+COMMIT
+```
+4.
