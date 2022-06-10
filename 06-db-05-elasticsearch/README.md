@@ -50,3 +50,74 @@ Enter host password for user 'elastic':
   "tagline" : "You Know, for Search"
   ```
 2.
+``[elasticsearch@b14080a7d7c2 ~]$ curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic -X PUT https://localhost:9200/ind-1?pretty -H 'Content-Type: application/json' -d'{ "settings": { "index": { "number_of_shards": 1, "number_of_replicas": 0 }}}'
+Enter host password for user 'elastic':
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true,
+  "index" : "ind-1"
+}
+[elasticsearch@b14080a7d7c2 ~]$ curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic -X PUT https://localhost:9200/ind-2?pretty -H 'Content-Type: application/json' -d'{ "settings": { "index": { "number_of_shards": 2, "number_of_replicas": 1 }}}'
+Enter host password for user 'elastic':
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true,
+  "index" : "ind-2"
+}
+[elasticsearch@b14080a7d7c2 ~]$ curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic -X PUT https://localhost:9200/ind-3?pretty -H 'Content-Type: application/json' -d'{ "settings": { "index": { "number_of_shards": 4, "number_of_replicas": 2 }}}'
+Enter host password for user 'elastic':
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true,
+  "index" : "ind-3"
+}
+```
+```
+[elasticsearch@b14080a7d7c2 ~]$ curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic https://localhost:9200/_cat/indices?v
+Enter host password for user 'elastic':
+health status index uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+yellow open   ind-2 zQqahdcNR8GcShl0221GBg   2   1          0            0       450b           450b
+green  open   ind-1 BvZz2RAzSH2SeZAdrgj1vw   1   0          0            0       225b           225b
+yellow open   ind-3 cjYATXsqRnanLFFE43DU_g   4   2          0            0       900b           900b
+```
+```
+[elasticsearch@b14080a7d7c2 ~]$ curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic https://localhost:9200/_cluster/health?pretty
+Enter host password for user 'elastic':
+{
+  "cluster_name" : "elasticsearch",
+  "status" : "yellow",
+  "timed_out" : false,
+  "number_of_nodes" : 1,
+  "number_of_data_nodes" : 1,
+  "active_primary_shards" : 9,
+  "active_shards" : 9,
+  "relocating_shards" : 0,
+  "initializing_shards" : 0,
+  "unassigned_shards" : 10,
+  "delayed_unassigned_shards" : 0,
+  "number_of_pending_tasks" : 0,
+  "number_of_in_flight_fetch" : 0,
+  "task_max_waiting_in_queue_millis" : 0,
+  "active_shards_percent_as_number" : 47.368421052631575
+}
+```
+Состояние yellow связано с тем, что есть unassigned шарды.
+```
+[elasticsearch@b14080a7d7c2 ~]$ curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic -X DELETE https://localhost:9200/ind-1?pretty
+Enter host password for user 'elastic':
+{
+  "acknowledged" : true
+}
+[elasticsearch@b14080a7d7c2 ~]$ curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic -X DELETE https://localhost:9200/ind-2?pretty
+Enter host password for user 'elastic':
+{
+  "acknowledged" : true
+}
+[elasticsearch@b14080a7d7c2 ~]$ curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic -X DELETE https://localhost:9200/ind-3?pretty
+Enter host password for user 'elastic':
+{
+  "acknowledged" : true
+}
+```
+3.
+
