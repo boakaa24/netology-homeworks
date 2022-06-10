@@ -120,4 +120,27 @@ Enter host password for user 'elastic':
   "acknowledged" : true
 ```
 3.
+```
+[elasticsearch@b14080a7d7c2 ~]$ curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic -X PUT https://localhost:9200/_snapshot/netology_backup?pretty -H 'Content-Type: application/json' -d' { "type": "fs", "settings": { "location": "/usr/share/elasticsearch/snapshots"}}'
+Enter host password for user 'elastic':
+{
+  "acknowledged" : true
+```
+```
+[elasticsearch@b14080a7d7c2 ~]$ curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic https://localhost:9200/_cat/indices?v
+Enter host password for user 'elastic':
+health status index uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+green  open   test  bljj22XrTLKiKmoKWGT3SA   1   0          0            0       225b           225b
+```
+```
+[elasticsearch@b14080a7d7c2 ~]$ ls -lah /usr/share/elasticsearch/snapshots
+total 48K
+drwxr-xr-x 3 elasticsearch elasticsearch 4.0K Jun 10 15:38 .
+drwx------ 1 elasticsearch elasticsearch 4.0K Jun 10 15:14 ..
+-rw-r--r-- 1 elasticsearch elasticsearch 1.1K Jun 10 15:38 index-0
+-rw-r--r-- 1 elasticsearch elasticsearch    8 Jun 10 15:38 index.latest
+drwxr-xr-x 5 elasticsearch elasticsearch 4.0K Jun 10 15:38 indices
+-rw-r--r-- 1 elasticsearch elasticsearch  19K Jun 10 15:38 meta-uH6SK7aNQn6zLGLG7GuhUw.dat
+-rw-r--r-- 1 elasticsearch elasticsearch  385 Jun 10 15:38 snap-uH6SK7aNQn6zLGLG7GuhUw.dat
+```
 
