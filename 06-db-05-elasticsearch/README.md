@@ -143,4 +143,20 @@ drwxr-xr-x 5 elasticsearch elasticsearch 4.0K Jun 10 15:38 indices
 -rw-r--r-- 1 elasticsearch elasticsearch  19K Jun 10 15:38 meta-uH6SK7aNQn6zLGLG7GuhUw.dat
 -rw-r--r-- 1 elasticsearch elasticsearch  385 Jun 10 15:38 snap-uH6SK7aNQn6zLGLG7GuhUw.dat
 ```
-
+```
+[elasticsearch@b14080a7d7c2 ~]$ curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic https://localhost:9200/_cat/indices?v                                        Enter host password for user 'elastic':
+health status index  uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+green  open   test-2 zhaVjpPyREWpmRVyMNTFBg   1   0          0            0       225b           225b
+```
+```
+[elasticsearch@b14080a7d7c2 ~]$ curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic -X POST https://localhost:9200/_snapshot/netology_backup/snapshot1/_restore?pretty
+Enter host password for user 'elastic':
+{
+  "accepted" : true
+  ```
+  ```
+  [elasticsearch@b14080a7d7c2 ~]$ curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic https://localhost:9200/_cat/indices?v                                        Enter host password for user 'elastic':
+health status index  uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+green  open   test   WOsdx4lmRRCZHEglHm9Pcw   1   0          0            0       225b           225b
+green  open   test-2 zhaVjpPyREWpmRVyMNTFBg   1   0          0            0       225b           225b
+```
