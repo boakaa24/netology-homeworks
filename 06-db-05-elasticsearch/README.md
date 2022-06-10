@@ -26,6 +26,10 @@ EXPOSE 9200
 CMD ["bin/elasticsearch"]
 ```
 ```
+https://hub.docker.com/repository/docker/boakaa24/elasticsearch
+```
+
+```
 [elasticsearch@b14080a7d7c2 ~]$ curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic https://localhost:9200
 Enter host password for user 'elastic':
 {
@@ -45,3 +49,4 @@ Enter host password for user 'elastic':
   },
   "tagline" : "You Know, for Search"
   ```
+2.
