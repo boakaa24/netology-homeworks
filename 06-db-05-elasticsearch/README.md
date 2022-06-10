@@ -50,7 +50,8 @@ Enter host password for user 'elastic':
   "tagline" : "You Know, for Search"
   ```
 2.
-``[elasticsearch@b14080a7d7c2 ~]$ curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic -X PUT https://localhost:9200/ind-1?pretty -H 'Content-Type: application/json' -d'{ "settings": { "index": { "number_of_shards": 1, "number_of_replicas": 0 }}}'
+```
+[elasticsearch@b14080a7d7c2 ~]$ curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic -X PUT https://localhost:9200/ind-1?pretty -H 'Content-Type: application/json' -d'{ "settings": { "index": { "number_of_shards": 1, "number_of_replicas": 0 }}}'
 Enter host password for user 'elastic':
 {
   "acknowledged" : true,
@@ -117,7 +118,6 @@ Enter host password for user 'elastic':
 Enter host password for user 'elastic':
 {
   "acknowledged" : true
-}
 ```
 3.
 
