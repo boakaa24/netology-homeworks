@@ -16,4 +16,12 @@ Terraform v1.2.3
 on linux_amd64
 ```
 3.
+```
+root@ubuntu-home:~/Terraform# ./terraform_old --version
+Terraform v1.1.9
+on linux_amd64
 
+root@ubuntu-home:~/Terraform# terraform --version
+Terraform v1.2.3
+on linux_amd64
+```
