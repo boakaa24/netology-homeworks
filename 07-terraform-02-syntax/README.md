@@ -1,6 +1,6 @@
-1.  
-Для YandexCloud для создания образов можно использовать packer.  
- 2.  
+1.
+Для YandexCloud для создания образов можно использовать packer.
+2.  
 ```
 terraform {
   required_providers {
